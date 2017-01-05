@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".DPMSettingsActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_restrictions_btn"
+        android:id="@+id/set_dpm_restrictions_btn"
+        android:layout_below="@+id/restriction_status_label" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/install_package_btn"
+        android:id="@+id/install_packages_standard_btn"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/set_dpm_restrictions_btn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_device_owner_btn"
+        android:id="@+id/clear_device_owner_btn"
+        android:layout_below="@+id/package_list_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Restriction Status"
+        android:id="@+id/restriction_status_label"
+        android:layout_below="@+id/info_label"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/proxy_switch"
+        android:id="@+id/set_proxy_btn"
+        android:layout_below="@+id/set_dpm_restrictions_btn"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_text"
+        android:id="@+id/proxy_text"
+        android:layout_alignBottom="@+id/set_proxy_btn"
+        android:layout_alignStart="@+id/clear_device_owner_btn" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/os_update_switch"
+        android:id="@+id/set_update_restriction_btn"
+        android:layout_below="@+id/set_proxy_btn"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/os_update_text"
+        android:layout_alignBottom="@+id/set_update_restriction_btn"
+        android:layout_alignStart="@+id/proxy_text" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/package_list_btn"
+        android:id="@+id/package_list_btn"
+        android:layout_below="@+id/install_packages_standard_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView android:text="@string/info_label" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_label"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_restrictions_btn"
+        android:id="@+id/clear_dpm_restrictions_btn"
+        android:layout_below="@+id/restriction_status_label"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
